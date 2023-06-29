@@ -1,0 +1,187 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+#more{
+    display: none;
+}
+.more-less-button{
+    background: none;
+    color: white;
+}
+.second-more-less-button{
+    margin: 2% 0;
+}
+
+body{
+    text-align: center;
+}
+iframe, video{
+    max-width: 100%;
+    height: auto;
+}
+.background{
+    background: rgb(41, 41, 41);
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+    margin: 2% 0;
+}
+img{
+    width: 60%;
+}
+.hover:hover{
+    cursor: pointer;
+    
+}
+.justify{
+    text-align: justify;
+}
+.monserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+.ubuntu{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 200;
+    font-size: 3vw;
+}
+.sacramento{
+    font-family: 'Sacramento', cursive;
+    font-size: 1.0vw;
+
+}
+
+.container-fluid{
+    padding: 7% 10%;
+}
+.navbar{
+    padding: 1% 5%;
+}
+
+.ejuandy-logo{
+    width: 32%;
+}
+.nav-texts{
+    font-size:0.8vw ;
+    text-transform: capitalize;
+}
+.nav-link{
+    text-transform: uppercase;
+}
+.carousel-item{
+   height: auto;
+    width: 100%;
+}
+.carousel-section{
+    padding: 0% 0 0 0;
+}
+.first-slide{
+    background-image: url("correctvideobackground.jpg");
+    background-size: cover;
+}
+.second-slide{
+    background-image: url("rubberstampbackground.jpg");
+    background-size: cover;
+}
+.third-slide{
+    background-image: url("border-from-stationery-technologies-with-coffee.jpg");
+    background-size: cover;
+}
+.carousel-text{
+    padding: 30% 0 50% 30%;
+   
+    font-size: 2.5vw;
+
+}
+/* **********second-section******** */
+    
+    .card{
+        margin: 4% 2%;
+        border: none;
+        background: rgb(240, 239, 239);
+        box-shadow: 6px 9px rgb(104, 104, 104);
+        font-size: 1.5vw;
+    }
+    .card:hover{
+        box-shadow: 6px 9px rgb(138, 138, 138); 
+    } 
+    .card-edit{
+        text-transform: capitalize;
+        font-size: xx-small;
+    }
+    .card-title {
+        font-size: 2.5vw;
+    }
+     .card-subtitle{
+        font-size: 2vw;
+    }
+    .btn{
+        text-transform: capitalize;
+    }
+    @media (max-width:900px) {
+        .btn{
+            font-size: 2.5vw;
+        }
+    }
+    .second-section-card-texts{
+        padding: 0% 7%;
+        text-align: justify;
+    }
+
+/* *********second-section************ */
+
+
+/* ************third-section******* */
+
+/* *********third-section-end********** */
+
+/* ***********fourth-section-text******** */
+
+
+.fourth-section-text{
+    margin: 5% 0 5% 0;
+}
+
+/* ***********fourth-section-end****** */
+
+
+/* ********fifth-section******* */
+
+.fifth-section-text{
+
+    text-align: justify;
+    margin: 10% 0 3% 0;
+}
+
+
+ 
+.fifth-section-button{
+    margin-bottom: 5%;
+}
+/* *********fifth-section-end***** */
+/* ***********entertainment-section */
+
+
+#entertainment-section .container-fluid{
+    padding: 7% 7%;
+}
+
+
+
+/* *****contact-section******** */
+
+
+/* *******footer-section*** */
+#footer-section .container-fluid{
+    padding: 3% 5%;
+}
+.footer-section-link{
+    color: black;
+    text-decoration: none;
+}
