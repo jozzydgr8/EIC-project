@@ -43,6 +43,13 @@ h1, h2, h3, h4, h5, h6{
     text-transform: uppercase;
     margin: 2% 0;
 }
+hr{
+    height: 2px;
+    color: white;
+    background: white;
+    padding: 0%;
+    margin: 0%;
+}
 .hover:hover{
     cursor: pointer;
     
