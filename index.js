@@ -96,3 +96,19 @@ function myFunction() {
 
     document. getElementById("content").style.display = "block";
   })
+
+  //handling forms
+
+  const fileInput = document.getElementById("myFileInput");
+  const previewImage = document.getElementById("previewImage");
+
+  fileInput.addEventListener('change', event=>{
+    const file = event.target.files[0];
+    const reader = new FileReader();
+
+    reader.onload=(e)=>{
+      previewImage.src=e.target.result;
+      previewImage.style.display='block';
+    };
+    reader.readAsDataURL(file);
+  });

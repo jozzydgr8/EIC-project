@@ -135,7 +135,12 @@ img{
     border: none;
     outline: none;
     background: transparent;
-    font-size: 1.7vw;
+    font-size: 1.0vw;
+}
+@media (max-width:600px) {
+    .readmore-btn{
+        font-size: 1.7vw;
+    }
 }
 /* **********second-section******** */
     

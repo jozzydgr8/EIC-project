@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+form{
+    /* border: solid 1px gainsboro;
+    border-radius: 20px; */
+    padding: 3% 5%;
+    text-align: left;
+}
+/* form > div {
+    border: solid 1px green;
+} */
+form > div input{
+    width: 100%;
+    min-height: 100px;
+    margin: 2% 0;
+    border: solid 1px gainsboro;
+    border-radius: 10px;
+    cursor: pointer;
+}
+input::placeholder, input[type='date']{
+    padding: 0 20px;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+input[type='date']{
+    text-transform:lowercase ;
+}
+input[type='submit'] {
+    min-height: 0;
+    width: fit-content;
+    display: grid;
+    justify-self: start;
+}
+input[type='file']{
+    padding: 20px;
+    width: fit-content;
+    border: none;
+}
