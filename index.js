@@ -97,3 +97,20 @@ function myFunction() {
     document. getElementById("content").style.display = "block";
   })
 
+
+  const approve = ()=> {
+    let input = document.getElementById("gIndemnity");
+    
+    input.classList.remove("btn-secondary");
+    input.classList.add("btn-outline-secondary");
+    input.value = "approved"
+
+  }
+  const approved = ()=>{
+    let input = document.getElementById("appIndemnity");
+
+    input.classList.remove("btn-secondary");
+    input.classList.add("btn-outline-secondary");
+    input.value = "approved"
+    
+  }

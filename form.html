@@ -124,7 +124,9 @@
                 <label for="date">Date</label>
                 <input type="date" name="date" required></div>
             <div><input type="text" required placeholder="Applicant's Name" name="appName" id="appName"></div>
-            <div><input type="tel" required placeholder="phone" name="phone" id="phone" class="phones">
+            <div>
+                <input type="tel" required placeholder="phone" name="phone" id="phone" class="phones">
+
             </div>
             <div><input type="text" required placeholder="Home address" name="homeAddy" id="homeAddy"></div>
             <div><input type="text" required placeholder="Office address" name="officeAddy" id="officeAddy"></div>
@@ -142,7 +144,7 @@
                     installment payments payable by borrower from me.
                 </label>
                 <div><input type="text" placeholder="name" id="secGName" name="secGName"></div>
-                <input type="button" name="gIndemnity" id="gIndemnity" value="Agree & Continue" class="btn btn-secondary btn-lg" required>
+                <input type="button" name="gIndemnity" id="gIndemnity" value="Agree & Continue" class="btn btn-secondary btn-lg approve" onclick="approve()" required>
             </p>
             
             </div>
@@ -155,7 +157,7 @@
                         to engage any available means to recover all it's outstanding and default payment fee from me.
                     </label>
                     <div><input type="text" placeholder="Name" id="name" name="name"></div>
-                    <input type="button" name="appIndemnity" id="appIndemnity" value="Agree & Continue" class="btn btn-secondary btn-lg" required>
+                    <input type="button" name="appIndemnity" id="appIndemnity" value="Agree & Continue" class="btn btn-secondary btn-lg approve" onclick="approved()" required>
 
                 </p>
         
