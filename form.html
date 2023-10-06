@@ -10,6 +10,7 @@
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <!-- *****************local-script -->
         <script src="index.js"></script>
+        
       
 
         
@@ -51,6 +52,9 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="form.css">
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
   </head>
   <body>
          <!-- *******navbar and title section************* -->
@@ -107,7 +111,7 @@
 
 
             <div>
-                <label for="borrowerPassport">Borrower's photo</label>
+                <label for="borrowerPassport">Applicant's photo</label>
                 <input type="file" id="myFileInput" name="borrowerPassport" accept="image/*">
                 <img id="previewImage" src="#" alt="previewImage" style="display:none">
             </div>
@@ -116,34 +120,44 @@
                 <input type="file" id="guarantorPassport" name="guarantorPassport" accept="image/*">
             </div>
         
-            <div><input type="date" required></div>
+            <div>
+                <label for="date">Date</label>
+                <input type="date" name="date" required></div>
             <div><input type="text" required placeholder="Applicant's Name" name="appName" id="appName"></div>
-            <div><input type="number" required placeholder="phone" name="phone" id="phone"></div>
+            <div><input type="tel" required placeholder="phone" name="phone" id="phone" class="phones">
+            </div>
             <div><input type="text" required placeholder="Home address" name="homeAddy" id="homeAddy"></div>
             <div><input type="text" required placeholder="Office address" name="officeAddy" id="officeAddy"></div>
             <div><input type="text" required placeholder="Applicant's Trade" name="trade" id="trade"></div>
             <div><input type="text" required placeholder="Loan Amount" name="loan" id="loan"></div>
             <div><input type="text"required placeholder="Repayment period" name="repay" id="repay"></div>
             <div><input type="text" required placeholder="Guarantor's Name" name="gName" id="gName"></div>
-            <div><input type="number" required placeholder="Guarantor's phone" name="gPhone" id="gPhone"></div>
+            <div><input type="tel" required placeholder="Guarantor's phone" name="gPhone" id="gPhone" class="phones"></div>
             <div><input type="text" required placeholder="Guarantor's Address" name="gAddy" id="gAddy"></div>
             <div>
                 <h2>Guarantor's Loan indemnity</h2>
             <p>
-                I hereby promise that i will pay all the outstanding repayments that the borrower fails 
-                to pay. I authorioze the company to engage any available means to recover all it's outstanding
-                installment payments payable by borrower from me.
+                <label for="gIndemnity">I hereby promise that i will pay all the outstanding repayments that the borrower fails 
+                    to pay. I authorioze the company to engage any available means to recover all it's outstanding
+                    installment payments payable by borrower from me.
+                </label>
+                <div><input type="text" placeholder="name" id="secGName" name="secGName"></div>
+                <input type="button" name="gIndemnity" id="gIndemnity" value="Agree & Continue" class="btn btn-secondary btn-lg" required>
             </p>
-            <div><input type="text" placeholder="name" id="secGName" name="secGName"></div>
+            
             </div>
         
             <div>
                 <h2>Applicant's Loan Indemnity</h2>
-                <p>I hereby promise that i will pay off my weekly payment. If I fail, the company is authorized
-                    to engage any available means to recover all it's outstanding and default payment fee from me.
+                <p>
+                    <label for="appIndemnity">
+                        I hereby promise that i will pay off my weekly payment. If I fail, the company is authorized
+                        to engage any available means to recover all it's outstanding and default payment fee from me.
+                    </label>
+                    <div><input type="text" placeholder="Name" id="name" name="name"></div>
+                    <input type="button" name="appIndemnity" id="appIndemnity" value="Agree & Continue" class="btn btn-secondary btn-lg" required>
+
                 </p>
-        
-                <div><input type="text" placeholder="Name" id="name" name="name"></div>
         
             </div>
             <div>
@@ -186,6 +200,12 @@
         
     </div>
 
-    <script src="form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+<script>
+  const input = document.querySelector(".phones");
+  window.intlTelInput(input, {
+    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+  });
+</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
